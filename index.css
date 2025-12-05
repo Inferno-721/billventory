@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-slate-900 bg-slate-50;
+  }
+}
+
+/* Custom Utilities */
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+/* Print Styles */
+@media print {
+  @page { margin: 1cm; }
+  body { 
+    background-color: white; 
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
